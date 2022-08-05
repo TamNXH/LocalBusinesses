@@ -66,6 +66,7 @@ extension BusinessDetailView {
             ScrollView(.vertical) {
                 VStack {
                     BusinessDetailImageView(image: contentViewModel.imageUrl)
+                        .frame(height: 200)
                     BusinessDetailInfoView(rating: contentViewModel.rating,
                                            reviewCount: contentViewModel.reviewCount,
                                            address: contentViewModel.address,
@@ -82,6 +83,10 @@ extension BusinessDetailView {
                     
                     if !contentViewModel.specialHours.isEmpty {
                         BusinessDetailDealsView(specialHour: contentViewModel.specialHours)
+                    }
+                    
+                    if !contentViewModel.photos.isEmpty {
+                        BusinessDetailPhotosView(photos: contentViewModel.photos)
                     }
                 }
             }

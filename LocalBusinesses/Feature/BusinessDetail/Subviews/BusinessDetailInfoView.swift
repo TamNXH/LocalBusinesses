@@ -20,17 +20,20 @@ struct BusinessDetailInfoView: View {
                 Text("Rating: \(rating)")
                 Text("Review count: \(reviewCount)")
                 Text("Address: \(address)")
-                HStack(spacing: 0) {
-                    Text("Contact: ")
-                    Button {
-                        let phone = "tel://"
-                        let phoneNumberformatted = phone + phoneCall
-                        guard let url = URL(string: phoneNumberformatted) else {
-                            return
+                
+                if !phone.isEmpty {
+                    HStack(spacing: 0) {
+                        Text("Contact: ")
+                        Button {
+                            let phone = "tel://"
+                            let phoneNumberformatted = phone + phoneCall
+                            guard let url = URL(string: phoneNumberformatted) else {
+                                return
+                            }
+                            UIApplication.shared.open(url)
+                        } label: {
+                            Text(phone)
                         }
-                        UIApplication.shared.open(url)
-                    } label: {
-                        Text(phone)
                     }
                 }
             }

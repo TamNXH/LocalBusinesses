@@ -40,6 +40,9 @@
 		DA84C409289CCC7A00DF0EFF /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84C408289CCC7A00DF0EFF /* StringExtensions.swift */; };
 		DA84C40A289CCC7A00DF0EFF /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84C408289CCC7A00DF0EFF /* StringExtensions.swift */; };
 		DA84C40B289CCC7A00DF0EFF /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84C408289CCC7A00DF0EFF /* StringExtensions.swift */; };
+		DA84C40D289CD9CD00DF0EFF /* BusinessDetailPhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84C40C289CD9CD00DF0EFF /* BusinessDetailPhotosView.swift */; };
+		DA84C40E289CD9CD00DF0EFF /* BusinessDetailPhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84C40C289CD9CD00DF0EFF /* BusinessDetailPhotosView.swift */; };
+		DA84C40F289CD9CD00DF0EFF /* BusinessDetailPhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA84C40C289CD9CD00DF0EFF /* BusinessDetailPhotosView.swift */; };
 		DAA2520B289B998A00209E6F /* BusinessListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2520A289B998A00209E6F /* BusinessListView.swift */; };
 		DAA2520C289B998A00209E6F /* BusinessListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2520A289B998A00209E6F /* BusinessListView.swift */; };
 		DAA2520D289B998A00209E6F /* BusinessListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2520A289B998A00209E6F /* BusinessListView.swift */; };
@@ -139,6 +142,7 @@
 		DA7686D4289C4F2300F6DD7B /* BusinessDetailHoursView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailHoursView.swift; sourceTree = "<group>"; };
 		DA7686D8289C50E300F6DD7B /* BusinessDetailDealsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailDealsView.swift; sourceTree = "<group>"; };
 		DA84C408289CCC7A00DF0EFF /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		DA84C40C289CD9CD00DF0EFF /* BusinessDetailPhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailPhotosView.swift; sourceTree = "<group>"; };
 		DAA2520A289B998A00209E6F /* BusinessListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessListView.swift; sourceTree = "<group>"; };
 		DAA2520E289B999B00209E6F /* BusinessListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessListViewModel.swift; sourceTree = "<group>"; };
 		DAB035A3289AB2C000C74C57 /* LocalBusinesses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalBusinesses.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -216,6 +220,7 @@
 				DA7686D0289C4DFA00F6DD7B /* BusinessDetailCategoriesView.swift */,
 				DA7686D4289C4F2300F6DD7B /* BusinessDetailHoursView.swift */,
 				DA7686D8289C50E300F6DD7B /* BusinessDetailDealsView.swift */,
+				DA84C40C289CD9CD00DF0EFF /* BusinessDetailPhotosView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -590,6 +595,7 @@
 				DAB03737289ACF9900C74C57 /* BusinessesAPIResponse.swift in Sources */,
 				DAB03692289AC0CF00C74C57 /* NetworkParametersEncode.swift in Sources */,
 				DA7686CD289C4C3A00F6DD7B /* BusinessDetailInfoView.swift in Sources */,
+				DA84C40D289CD9CD00DF0EFF /* BusinessDetailPhotosView.swift in Sources */,
 				DAB03680289AC0CF00C74C57 /* APIError.swift in Sources */,
 				DAB03689289AC0CF00C74C57 /* NetworkCommonDefination.swift in Sources */,
 				DAB03727289AC79B00C74C57 /* SceneDelegate.swift in Sources */,
@@ -603,6 +609,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA7686BC289C091300F6DD7B /* BusinessListSearchView.swift in Sources */,
+				DA84C40E289CD9CD00DF0EFF /* BusinessDetailPhotosView.swift in Sources */,
 				DAB0372F289ACA5500C74C57 /* CommonErrorAPIResponse.swift in Sources */,
 				DAB03699289AC0CF00C74C57 /* NetworkServices.swift in Sources */,
 				DA7686C5289C319800F6DD7B /* BusinessDetailViewModel.swift in Sources */,
@@ -673,6 +680,7 @@
 				DA7686BD289C091300F6DD7B /* BusinessListSearchView.swift in Sources */,
 				DA7686D3289C4DFA00F6DD7B /* BusinessDetailCategoriesView.swift in Sources */,
 				DAB0369A289AC0CF00C74C57 /* NetworkServices.swift in Sources */,
+				DA84C40F289CD9CD00DF0EFF /* BusinessDetailPhotosView.swift in Sources */,
 				DAB036D1289AC1E800C74C57 /* CodableExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

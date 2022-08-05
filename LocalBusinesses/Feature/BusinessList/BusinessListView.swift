@@ -91,7 +91,8 @@ extension BusinessListView {
                     BusinessListItemView(imageUrl: item.imageUrl,
                                          businessName: item.businessName,
                                          distance: item.distance,
-                                         rating: item.rating)
+                                         rating: item.rating,
+                                         isClosed: item.isClosed)
                     NavigationLink(destination: NavigationLazyView(BusinessDetailView(businessId: item.BusinessId,
                                                                                       businessName: item.businessName))) {
                         EmptyView()

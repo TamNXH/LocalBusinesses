@@ -19,6 +19,7 @@ class BusinessDetailViewModel: ObservableObject {
     @Published var reviewCount: String = ""
     @Published var isShowingNoData: Bool = false
     @Published var phoneCall: String = ""
+    @Published var photos: [BusinessDetail.Photo] = []
     
     let businessName: String
     
@@ -66,6 +67,7 @@ class BusinessDetailViewModel: ObservableObject {
                 self.imageUrl = businessDetail.imageUrl
                 self.categories = businessDetail.categories
                 self.phoneCall = businessDetail.phoneCall
+                self.photos = businessDetail.photos
             })
             .store(in: &disposables)
     }
@@ -83,6 +85,7 @@ struct BusinessDetail {
     let rating: String
     let reviewCount: String
     let phoneCall: String
+    let photos: [Photo]
     
     struct Category: Identifiable {
         let id: UUID = UUID()
@@ -104,6 +107,11 @@ struct BusinessDetail {
         let end: String
     }
     
+    struct Photo: Identifiable {
+        let id: UUID = UUID()
+        let url: String
+    }
+    
     init(response: BusinessDetailAPIResponse) {
         imageUrl = response.imageURL ?? ""
         categories = response.categories?.map({ Category(title: $0.title ?? "") }) ?? []
@@ -119,6 +127,7 @@ struct BusinessDetail {
         rating = "\(response.rating ?? .zero)"
         reviewCount = "\(response.reviewCount ?? .zero)"
         phoneCall = response.phone ?? ""
+        photos = response.photos?.map( { Photo(url: $0) }) ?? []
     }
 }
 

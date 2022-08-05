@@ -12,6 +12,7 @@ struct BusinessListItemView: View {
     let businessName: String
     let distance: String
     let rating: String
+    let isClosed: Bool
     
     var body: some View {
         HStack {
@@ -23,7 +24,9 @@ struct BusinessListItemView: View {
                 Text("Distance: \(distance)")
             }
             
-            Spacer()
+            Spacer(minLength: 0)
+            
+            Image(systemName: isClosed ? "lock.fill" : "lock.open.fill")
         }
         .padding()
     }
@@ -36,7 +39,8 @@ struct BusinessListItemView_Previews: PreviewProvider {
         BusinessListItemView(imageUrl: "https://s3-media1.fl.yelpcdn.com/bphoto/gyeXuabQQpblvZ5lzVSjeg/o.jpg",
                              businessName: "Steam - Shanghai Asian Fusion",
                              distance: "3362.6951826521286",
-                             rating: "5.0")
+                             rating: "5.0",
+                             isClosed: true)
     }
 }
 

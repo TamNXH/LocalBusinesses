@@ -89,13 +89,15 @@ struct Business: Identifiable {
     let businessName: String
     let distance: String
     let rating: String
+    let isClosed: Bool
     
     init(response: BusinessListAPIResponse.Business) {
         BusinessId = response.id
         imageUrl = response.imageURL ?? ""
         businessName = response.name ?? ""
-        distance = "\(response.distance ?? .zero)"
+        distance = "\(String(format: "%.2f", response.distance ?? .zero)) meters"
         rating = "\(response.rating ?? .zero)"
+        isClosed = response.isClosed ?? true
     }
 }
 
